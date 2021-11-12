@@ -2,9 +2,11 @@ import ReactModal from 'react-modal';
 import React,{useState} from 'react';
 
 export function Edit(props){
+  // state of component
   let [email,updateEmail]=useState(localStorage.getItem("selectedEmail"));
   let [selectedLastName,updateLastName]=useState(localStorage.getItem("selectedLastName"));
   let [selectedFirstName,updateFirstName]=useState(localStorage.getItem("selectedLastName"));
+// handler update
 let handlerUpdate=(event)=>{
   if(event.target.id==="firstname"){
     updateFirstName(event.target.value);

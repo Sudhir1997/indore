@@ -3,8 +3,7 @@ import axios from 'axios';
 import styles from './dashboard.module.css';
 import {Edit} from './edit.js';
 export function Dashboard(){
-
-
+// state of component
   let [userName,changeUsername]=useState(localStorage.getItem("username")||"");
   let [details,updateDetails]=useState();
   let [display,updateDisplay]=useState(false);

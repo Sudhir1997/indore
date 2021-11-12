@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import { useNavigate } from "react-router-dom";
 
 export function Signup(){
+  // state of component
    let [buttonDisableduseState,changebuttonDisableduseState]=useState(false);
    let navigate = useNavigate();
 

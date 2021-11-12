@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 export function Login(){
+  // state of component
   let [username,updateUsername]=useState(localStorage.getItem("email")||localStorage.getItem("username")||"");
   let [password,updatePassword]=useState(localStorage.getItem("password")||"");
 
